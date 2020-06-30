@@ -5,4 +5,5 @@ datos = {"Nombres": ["Marisol", "Pedro", "Carlos", "Felipe"],
          "Deportes": ["Futbol", "Baloncesto", "Rugby", "Voleibol"],
          "Materias": ["cálculo", "Física", "Química", "constitución"]}
 df = pd.DataFrame(datos)
+df["Calificaciones"] = df.Calificaciones.astype(int)
 print(df)
